@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="UTRGVApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title>Features - {{title}}</title>
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+        <header></header>
+        <navbar></navbar>
+        @RenderBody()
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/angularjs")
+        @Scripts.Render("~/bundles/app")
+        @RenderSection("scripts", required: false)
+
+</body>
+</html>

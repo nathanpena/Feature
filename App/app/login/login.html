@@ -1,0 +1,64 @@
+<div class="container-fluid">
+<div class="row content">
+    <div class="header-icon">
+        <p class="sso-title">UTRGV Login</p>
+    </div>
+    <div class="column jumbotron">
+        <span class="frm_head">Log In with your UTRGV account</span>
+        <form class="utrgv-form" ng-submit="login()" id="login" role="form">
+            <div id="error">{{err.message}}</div>
+            <section>
+                <label for="username">Username</label>
+                <input id="j_username" class="form-element form-field" name="j_username" type="text" value="" placeholder="UTRGV Email Address" autofocus tabindex="1" ng-model="user.email">
+            </section>
+            <section>
+                <label for="password">Password</label>
+                <input class="form-element form-field" name="j_password" type="password" value="" placeholder="UTRGV Password" tabindex="2" ng-model="user.password">
+            </section>
+            <section>
+                <button class="form-element form-button" type="submit" >Log In</button>
+            </section>
+            <span us-spinner spinner-on="waiting"></span>
+        </form>
+        <p><a href="http://utrgv.edu/myaccount">Can't access your account?</a></p>
+        <em>To protect your personal information, please close ALL open browser windows when you log out.</em>
+    </div><!-- END:column jumbotron -->
+    <span us-spinner spinner-on="loading"></span>
+
+    <div class="right-box">
+        <p class="info">By pressing the Log In button, you agree to:</p>
+        <ul class="orange-arrow">
+            <li class="">Use the system and data only for official university transactions.</li>
+            <li class="">Never share your password or access.</li>
+        </ul>
+        <p class="bold">IT Service Desk</p>
+        <ul class="orange-arrow">
+            <li>Brownsville: (956) 882-2020</li>
+            <li>Edinburg: (956) 665-2020</li>
+        </ul>
+        <div class="disclaimer">
+            <p>Unauthorized use of this site is prohibited and may subject you to civil and criminal prosecution. Usage may be subject to security testing and monitoring.</p>
+        </div>
+    </div><!--END right-box-->
+
+</div><!--END row content-->
+<!--<div style="max-width:100% !important" class="row messenger-disclaimer">
+    <div class="alert alert-warning" role="alert">
+        <p>
+            UTRGV Messenger is provided as a service for posting official University news and announcements.
+            To create a bulletin, you must be a University employee or an officer of an official University group.
+            Bulletin submissions are approved by designated approvers from each University Division.
+        </p>
+        <p>
+            Submissions will be rejected or removed if content:
+        </p>
+
+        <ul>
+            <li>Is in violation of UTRGV or UT System policies or current laws.</li>
+            <li>Is not official University news or announcements under your department's responsibility.</li>
+            <li>Is considered offensive or contains links to third-party websites with questionable content.</li>
+            <li>Expresses personal points of view or opinions.</li>
+        </ul>
+    </div>
+</div>-->
+</div>
