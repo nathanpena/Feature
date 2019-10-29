@@ -22,7 +22,6 @@ namespace Features.Migrations
 
         protected override void Seed(UTRGVAppContext context)
         { 
-
             var roles = new Role[2];
 	 	 	 roles[0] = new Role { Name = "Faculty" }; 
 	 	 	 roles[1] = new Role { Name = "Admin" }; 
